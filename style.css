@@ -116,7 +116,7 @@ body.dark .ticket-lock {
 }
 
 .divider {
-  width: 1px;
+  width: 2px;
   background-color: #000;
 }
 
@@ -209,7 +209,7 @@ body.dark .ticket-lock {
 .ticket-cont {
   height: 12rem;
   width: 10rem;
-  background-color: rgb(178, 163, 163);
+  background-color: gray;
   border: 1.5px solid #3d3d3d;
   border-radius: 15px;
   display: grid;
