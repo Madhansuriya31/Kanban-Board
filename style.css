@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #222;
+}
+
+#night-btn i {
+  color: white !important;
+}
+
+body.dark #night-btn i {
+  color: gold !important;
+}
+
+body.dark .ticket-cont {
+  border: 1.5px solid white;
+  font-weight: normal;
+}
+
+body.dark .ticket-lock {
+  color:white;
+  -webkit-text-stroke: 0.5px black;
+}
+
+#night-btn {
+  height: 4rem;
+  width: 3.5rem;
+  font-size: 2rem;
+  color: black;
+  background-color: darkslategray;
+  border: none;
+}
+
+.toolbox-cont {
+  height: 5rem;
+  background-color: darkslategray;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.toolbox-priority-cont {
+  height: 3.5rem;
+  width: 25rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 8px;
+}
+
+.color {
+  height: 2rem;
+  width: 3.5rem;
+  border: 2px solid black;
+}
+
+.color:hover {
+  border: 2px solid grey;
+}
+
+.all {
+  padding: 4px 6px;
+  background-color: wheat;
+}
+
+.lightblue {
+  background-color: lightblue;
+}
+
+.lightcoral {
+  background-color: lightcoral;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.darkgreen {
+  background-color: darkgreen;
+}
+
+.action-btn-cont {
+  height: 3.5rem;
+  width: 12rem;
+  background-color: #544f4fa1;
+  display: flex;
+  border: 1px solid #000;
+}
+
+.action-btn-cont > button {
+  font-size: 2rem;
+  width: 100%;
+  color: #fff;
+  background-color: #383636;
+  border: none;
+}
+
+.action-btn-cont > button:hover {
+  background-color: #373333;
+}
+
+.divider {
+  width: 1px;
+  background-color: #000;
+}
+
+
+.main-cont {
+  display: flex;
+  gap: 2rem;
+  justify-content: start;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.modal-cont {
+  height: 50vh;
+  width: 46vw;
+  display: none;
+  background-color: lightsalmon;
+  position: fixed;
+  top: calc(50% - 25vh);
+  right: calc(50% - 23vw);
+  border: 2px solid #3d3d3d;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px rgb(68, 68, 68, 0.6);
+}
+
+.task-container {
+  height: 100%;
+  width: 75%;
+  position: relative;
+}
+
+.task-container .task-btn-cont {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.75rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.task-btn-cont > button {
+  color: #fff;
+  background-color: #3d3d3d;
+  border: 2px solid gray;
+  border-radius: 4px;
+  padding: 12px 16px;
+}
+
+.task-btn-cont > button:hover {
+  background-color: #373333;
+}
+
+.textArea-cont {
+  height: 100% !important;
+  width: 100% !important;
+  resize: none;
+  border: none;
+  background-color: #bfd9d9;
+  color: black;
+  font-size: 1.5rem;
+  padding: 0.75rem;
+}
+
+.priority-task-cont {
+  width: 25%;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  background-color: darkslategray;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.priority-color {
+  height: 100%;
+  width: 100%;
+  border: 2px solid gray;
+}
+
+.priority-color:hover {
+  border: 2px solid red;
+}
+
+.active {
+  border: 2px solid gold;
+}
+
+.ticket-cont {
+  height: 12rem;
+  width: 10rem;
+  background-color: rgb(178, 163, 163);
+  border: 1.5px solid #3d3d3d;
+  border-radius: 15px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 4fr;
+  position: relative;
+  overflow: hidden;
+}
+
+.ticket-id {
+  padding: 0.25rem;
+  background-color: gold;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.ticket-area {
+  padding: 0.875rem 0.25rem;
+  cursor: default;
+  caret-color: black;
+  color:black;
+}
+
+.ticket-lock {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.75rem;
+}
+
